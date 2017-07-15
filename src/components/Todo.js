@@ -3,11 +3,11 @@
  */
 
 import React from 'react'
-import ProTypes from 'prop-types'
+import PropTypes from 'prop-types'
 
 const Todo = ({ onClick, completed, text}) => (
     <li
-        onclick={onClick}
+        onClick={onClick}
         style={{
             textDecoration: completed ? 'line-through' : 'none'
         }}
@@ -17,7 +17,7 @@ const Todo = ({ onClick, completed, text}) => (
 )
 
 Todo.propTypes = {
-    coClick: PropTypes.func.isRequired,
+    onClick: PropTypes.func.isRequired,
     completed: PropTypes.bool.isRequired,
     text: PropTypes.string.isRequired
 }

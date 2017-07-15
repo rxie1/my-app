@@ -9,7 +9,7 @@ let store = createStore(todoApp)
 
 render(
     <Provider store={store}>
-        <app />
+        <App />
     </Provider>,
     document.getElementById('root')
 )

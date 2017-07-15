@@ -5,7 +5,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const Link = ({ active, children, onClock }) => {
+const Link = ({ active, children, onClick }) => {
     if (active) {
         return <pan>{children}</pan>
     }
@@ -24,7 +24,7 @@ const Link = ({ active, children, onClock }) => {
 }
 
 Link.propTypes = {
-    active: propTypes.bool.isRequired,
+    active: PropTypes.bool.isRequired,
     children: PropTypes.node.isRequired,
     onClick: PropTypes.func.isRequired
 }
