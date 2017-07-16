@@ -2,6 +2,20 @@
  * Created by ray.xie on 2017-07-15.
  */
 
+// action types
+export const ADD_TODO = 'ADD_TODO'
+export const TOGGLE_TODO = 'TOGGLE_TODO'
+export const SET_VISIBILITY_FILTER = 'SET_VISIBILITY_FILTER'
+
+// other constants
+export const VisibilityFilters = {
+  SHOW_ALL: 'SHOW_ALL',
+  SHOW_COMPLETED: 'SHOW_COMPLETED',
+  SHOW_ACTIVE: 'SHOW_ACTIVE'
+}
+
+// action creators
+
 let nextTodoId = 0
 export const addTodo = text => {
     return {
