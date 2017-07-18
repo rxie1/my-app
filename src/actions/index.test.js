@@ -5,7 +5,6 @@ import React from 'react'
 
 import * as actions from './index'
 import * as types from './index'
-import * as filters from './index'
 
 describe('action', () => {
   it('should create an action to add a todo', () => {

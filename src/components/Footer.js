@@ -21,7 +21,7 @@ const Footer = () => (
             Completed
         </FilterLink>
         {', '}
-        <FilterLink FILTER="SHOW_NONE">
+        <FilterLink filter="SHOW_NONE">
             Hidden All
         </FilterLink>
 
